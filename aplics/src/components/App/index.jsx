@@ -9,10 +9,13 @@ import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import * as ROUTES from '../../constants/routes';
+import { withAuthentication } from '../Session';
+
+
 const App = () => (
   <Router>
     <div>
-      <Navigation />
+    <Navigation/>
       <hr />
       <Route exact path={ROUTES.LANDING} component={LandingPage} />
       <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
@@ -23,5 +26,8 @@ const App = () => (
       <Route path={ROUTES.ADMIN} component={AdminPage} />
     </div>
   </Router>
-);
-export default App;
+
+   );
+
+
+   export default withAuthentication(App);

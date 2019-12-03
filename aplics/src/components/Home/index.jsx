@@ -2,6 +2,8 @@ import React from 'react';
 import './indexHome.css';
 import ImgDone from '../../img/clip-done.png';
 
+
+
 const Account = () => (
   <div className="home-bground">
     <box>
@@ -14,17 +16,9 @@ const Account = () => (
     <button className="home-buttons">Cartera de posiciones</button>
     <button className="home-buttons">Requisiciones</button>
     <button className="home-buttons">Cartera de postulantes</button>
-  
-  
-  
     </div>
-    <div>
+
     <img id="img-done" src={ImgDone} />
-    </div>
-    
-    
-    
-    
   </div>
 );
 

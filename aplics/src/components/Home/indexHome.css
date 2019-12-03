@@ -29,7 +29,7 @@
 
   .home-buttons {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     border: none;
     width: 15vw;
     height: 10vh;

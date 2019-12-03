@@ -6,6 +6,7 @@ const Vacantes = () => {
     return (
         <div className="vacantes-section">
             <h1 className="title">Vacantes</h1>
+            <div className="line"></div>
             <ul className="group-png">
                 <li><img className="img-vacantes" src={ImgVacantes} /></li>
                 <li><img className="img-vacantes" src={ImgVacantes} /></li>

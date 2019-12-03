@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vivianaberron/MEX008-Aplics-Talent-Fest/precache-manifest.f8dbaa957eac0d15f40f70918340dba7.js"
+  "/vivianaberron/MEX008-Aplics-Talent-Fest/precache-manifest.341e0b6caffe99107ddaf65403a29e76.js"
 );
 
 self.addEventListener('message', (event) => {

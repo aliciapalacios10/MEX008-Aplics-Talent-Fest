@@ -6,8 +6,8 @@ import * as ROUTES from '../../constants/routes';
 import './SignUp.css';
 
 const SignUpPage = () => (
-	<div>
-		<h1>SignUp</h1>
+	<div className="section-signUp">
+		<h1 className="title-align" >Registro</h1>
 	    <SignUpForm />
 	</div>
 );
@@ -50,26 +50,26 @@ class SignUpFormBase extends Component {
         || lastName === '';
 
 		return (
-			<form onSubmit={this.onSubmit}>
-				<input name="firstName" value={firstName} onChange={this.onChange} type="text" placeholder="First Name" />
-                <input name="lastName" value={lastName} onChange={this.onChange} type="text" placeholder="Last Name" />
+			<form className="form-signUp" onSubmit={this.onSubmit}>
+				<input className="style-signUp" name="firstName" value={firstName} onChange={this.onChange} type="text" placeholder="Nombre" />
+                <input className="style-signUp" name="lastName" value={lastName} onChange={this.onChange} type="text" placeholder="Apellidos" />
 
-				<input name="email" value={email} onChange={this.onChange} type="text" placeholder="Email Address" />
-				<input
+				<input className="style-signUp" name="email" value={email} onChange={this.onChange} type="text" placeholder="Correo Electrónico" />
+				<input className="style-signUp"
 					name="passwordOne"
 					value={passwordOne}
 					onChange={this.onChange}
 					type="password"
-					placeholder="Password"
+					placeholder="Contraseña"
 				/>
-				<input
+				<input className="style-signUp"
 					name="passwordTwo"
 					value={passwordTwo}
 					onChange={this.onChange}
 					type="password"
-					placeholder="Confirm Password"
+					placeholder="Confirmar Contraseña"
 				/>
-				<button disabled={isInvalid} type="submit">Sign Up</button>
+				<button className="btn-signUp" disabled={isInvalid} type="submit">Regístrate</button>
 				{error && <p>{error.message}</p>}
 			</form>
 		);

@@ -8,3 +8,36 @@
     text-decoration: none;
     color: rgb(158, 45, 161);
 }
+
+.section-signUp {
+    margin-top: 6rem;
+}
+
+.title-align {
+    text-align: center;
+}
+
+.form-signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.style-signUp {
+    width: 25%;
+    height: 55px;
+    border: 2px solid #3C3FA0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.btn-signUp {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #A1C3FC;
+    font-size: 1rem;
+    color: black;
+}

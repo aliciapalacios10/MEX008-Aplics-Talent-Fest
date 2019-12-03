@@ -79,6 +79,8 @@ class Requisiciones extends React.Component{
             <p>Dirección de recursos humanos (Nombre y firma)</p>
             <input type="text" name="contenido"/>
         )
+    
+    
     }
 }
-export default Requisiciones; 
+export default Requisiciones;  

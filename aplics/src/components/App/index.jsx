@@ -26,6 +26,7 @@ const App = () => (
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route path={ROUTES.ADMIN} component={AdminPage} />
       <Route path={ROUTES.NEW} component={New} />
+      <Route path={ROUTES.REQUISICION_FORM} component={HomePage}/>
     </div>
   </Router>
 

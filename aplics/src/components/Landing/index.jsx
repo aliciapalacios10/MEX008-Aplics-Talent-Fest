@@ -9,7 +9,7 @@ const Account = () => (
   <div className="landing">
     <div className="information-signin">
       <h1 className="logo" >AFFINITY</h1>
-      <h4 className="slogan" >Procesos cortos para RH</h4>
+      <h4 className="slogan" > Mejores procesos en RH </h4>
       <button className="btn-welcome">
         <Link className="btn-login" to={ROUTES.SIGN_IN}>Comenzar</Link>
       </button>

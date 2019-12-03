@@ -1,13 +1,68 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+.landing {
+  background-color: #3C3FA0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10rem;
+}
+
+.information-signin {
+  margin-left: 5rem;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.img-welcome {
+  width: 74%;
+  height: 76%;
+  /* transform : scale(1.1);
+  overflow: hidden; */
+}
+
+.logo {
+  color: white;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.08em;
+}
+
+.slogan {
+  font-size: 1.7rem;
+  line-height: 49px;
+  letter-spacing: 0.1em;
+
+  color: #C693EE;
+}
+
+.btn-welcome {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #A1C3FC;
+}
+
+.btn-login{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  /* color: white; */
+  color: #1D1E49;
 }

@@ -1,12 +1,14 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import SignOutButton from '../SignOut';
-// import * as ROUTES from '../../constants/routes';
-// import { AuthUserContext } from '../Session';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import SignOutButton from '../SignOut';
+import * as ROUTES from '../../constants/routes';
+import { AuthUserContext } from '../Session';
+import './Navigation.css';
+
 
 
 const Navigation = () => (
-  <div>
+  <div className="navigation">
     <AuthUserContext.Consumer>
       {authUser =>
         authUser ? <NavigationAuth /> : <NavigationNonAuth />
@@ -47,4 +49,4 @@ const NavigationNonAuth = () => (
 );
 
 
-// export default Navigation;
+export default Navigation;

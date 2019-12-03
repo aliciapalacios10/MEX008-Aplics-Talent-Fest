@@ -69,7 +69,8 @@ class SignUpFormBase extends Component {
 					type="password"
 					placeholder="Confirmar Contraseña"
 				/>
-				<button className="btn-signUp" disabled={isInvalid} type="submit">Regístrate</button>
+				<button className="btn-signUp" disabled={isInvalid} type="submit">Enviar</button>
+				<Link id="login-txt" to={ROUTES.SIGN_IN}>¿Ya tienes una cuenta? Inicia sesión aquí</Link>
 				{error && <p>{error.message}</p>}
 			</form>
 		);

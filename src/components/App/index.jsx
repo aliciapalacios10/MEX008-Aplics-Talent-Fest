@@ -12,12 +12,12 @@ import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
 // import LandingRH from '../RecursosHumanos';
 import New from '../New';
+import EstadoRequisiciones from '../Database/EstadoRequisiciones';
 
 const App = () => (
   <Router>
     <div>
     <Navigation/>
-      <hr />
       <Route exact path={ROUTES.LANDING} component={LandingPage} />
       <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
       <Route path={ROUTES.SIGN_IN} component={SignInPage} />
@@ -26,7 +26,7 @@ const App = () => (
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route path={ROUTES.ADMIN} component={AdminPage} />
       <Route path={ROUTES.NEW} component={New} />
-      <Route path={ROUTES.REQUISICION_FORM} component={HomePage}/>
+      <Route path={ROUTES.REQUISICION_FORM} component={EstadoRequisiciones}/>
     </div>
   </Router>
 

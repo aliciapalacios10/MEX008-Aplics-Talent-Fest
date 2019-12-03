@@ -9,9 +9,9 @@ const New = () => {
       <div className="section-home">
         <div className="home-buttons-container">
             <button className="home-buttons">Solicitud de posición</button>
-            <button className="home-buttons">Cartera de posiciones</button>
-            <button className="home-buttons">Requisiciones</button>
-            <button className="home-buttons">Cartera de postulantes</button>
+            <button className="home-buttons">Vacantes</button>
+            <button className="home-buttons">Historial de requisiciones</button>
+            <button className="home-buttons">Postulantes</button>
         </div>
         <img className="img-done" src={ImgDone} />
       </div>

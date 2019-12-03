@@ -6,6 +6,7 @@ export const ACCOUNT = '/account';
 export const ADMIN = '/admin';
 export const NEW = '/home';
 export const REQUISICION_FORM = '/requisicion';
+
 // export const PASSWORD_FORGET = '/pw-forget';
 
 

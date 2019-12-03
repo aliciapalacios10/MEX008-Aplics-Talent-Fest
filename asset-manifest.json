@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/css/main.9c5d360b.chunk.css",
-    "main.js": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/js/main.1c3c5b45.chunk.js",
-    "main.js.map": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/js/main.1c3c5b45.chunk.js.map",
-    "runtime-main.js": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/js/runtime-main.534f7dad.js",
-    "runtime-main.js.map": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/js/runtime-main.534f7dad.js.map",
-    "static/js/2.4044597e.chunk.js": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/js/2.4044597e.chunk.js",
-    "static/js/2.4044597e.chunk.js.map": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/js/2.4044597e.chunk.js.map",
-    "index.html": "/vivianaberron/MEX008-Aplics-Talent-Fest/index.html",
-    "precache-manifest.341e0b6caffe99107ddaf65403a29e76.js": "/vivianaberron/MEX008-Aplics-Talent-Fest/precache-manifest.341e0b6caffe99107ddaf65403a29e76.js",
-    "service-worker.js": "/vivianaberron/MEX008-Aplics-Talent-Fest/service-worker.js",
-    "static/css/main.9c5d360b.chunk.css.map": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/css/main.9c5d360b.chunk.css.map",
-    "static/media/clip-1.png": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/media/clip-1.e913f34a.png",
-    "static/media/clip-done.png": "/vivianaberron/MEX008-Aplics-Talent-Fest/static/media/clip-done.b1616ec5.png"
+    "main.css": "./static/css/main.9c5d360b.chunk.css",
+    "main.js": "./static/js/main.e134dcde.chunk.js",
+    "main.js.map": "./static/js/main.e134dcde.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.16a3e915.js",
+    "runtime-main.js.map": "./static/js/runtime-main.16a3e915.js.map",
+    "static/js/2.c37826a8.chunk.js": "./static/js/2.c37826a8.chunk.js",
+    "static/js/2.c37826a8.chunk.js.map": "./static/js/2.c37826a8.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.4ca539b72b32e04bfef867a6a51c0f7f.js": "./precache-manifest.4ca539b72b32e04bfef867a6a51c0f7f.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.9c5d360b.chunk.css.map": "./static/css/main.9c5d360b.chunk.css.map",
+    "static/media/clip-1.png": "./static/media/clip-1.e913f34a.png",
+    "static/media/clip-done.png": "./static/media/clip-done.b1616ec5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.534f7dad.js",
-    "static/js/2.4044597e.chunk.js",
+    "static/js/runtime-main.16a3e915.js",
+    "static/js/2.c37826a8.chunk.js",
     "static/css/main.9c5d360b.chunk.css",
-    "static/js/main.1c3c5b45.chunk.js"
+    "static/js/main.e134dcde.chunk.js"
   ]
 }

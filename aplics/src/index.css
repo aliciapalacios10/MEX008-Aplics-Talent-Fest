@@ -33,6 +33,8 @@ body {
 .img-welcome {
   width: 74%;
   height: 85%;
+  width: 50vw;
+  height: 65vh;
   /* transform : scale(1.1);
   overflow: hidden; */
 }
@@ -49,20 +51,23 @@ body {
   line-height: 49px;
   letter-spacing: 0.1em;
 
-  color: #C693EE;
+  color: rgb(186, 160, 206);
 }
 
 .btn-welcome {
-  width: 9rem;
+  width: 11rem;
   height: 3rem;
   border-radius: 15px 15px 15px 15px;
+  border: none;
   background-color: #A1C3FC;
+  margin: 6%;
 }
 
 .btn-login{
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
   /* color: white; */
-  color: #1D1E49;
+  color: black;
 }

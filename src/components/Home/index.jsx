@@ -4,8 +4,7 @@ import Requisicion from '../Database/Requisicion';
 
 const HomePage = () => (
     <div>
-    <h1>Home</h1>
- <Requisicion />
+ <Requisicion/>
 
   </div>
 );

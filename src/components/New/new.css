@@ -2,10 +2,14 @@
     background-color: #3C3FA0;
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    top:0;
 }
 
 #home-title {
     display: flex;
+    margin: 0;
     padding: 2.5%;
     font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
@@ -27,6 +31,7 @@
 .home-buttons-container{
     display: flex;
     flex-direction: column;
+
     margin-left: 11rem;
     margin-top: 5%;
 }
@@ -35,6 +40,7 @@
     width: 20vw;
     height: 7vh;
     background-color: white;
+    text-decoration: none;
     color: #3C3FA0;
     border-radius: 6px;
     font-size: 1rem;
@@ -43,6 +49,6 @@
   }
 
   .img-done {
-      width: 67vw;
-      height: 73vh;
+      width: 60vw;
+      height: 78vh;
   }

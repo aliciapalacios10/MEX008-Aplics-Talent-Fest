@@ -43,6 +43,9 @@ const NavigationNonAuth = () => (
     <li>
       <Link to={ROUTES.NEW}>NEW</Link>
     </li>
+    <li>
+      <Link to={ROUTES.VACANTES}>vacantes</Link>
+    </li>
   </ul>
 );
 

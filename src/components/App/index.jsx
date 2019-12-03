@@ -12,6 +12,7 @@ import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
 // import LandingRH from '../RecursosHumanos';
 import New from '../New';
+import PostulantesComp from '../Vacantes';
 
 const App = () => (
   <Router>
@@ -27,6 +28,7 @@ const App = () => (
       <Route path={ROUTES.ADMIN} component={AdminPage} />
       <Route path={ROUTES.NEW} component={New} />
       <Route path={ROUTES.REQUISICION_FORM} component={HomePage}/>
+      <Route path={ROUTES.VACANTES} component={PostulantesComp}/>
     </div>
   </Router>
 

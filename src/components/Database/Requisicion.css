@@ -1,0 +1,52 @@
+.conteiner-requisiciones{
+    margin: auto;
+}
+.requisition-form {
+    width: 10rem;
+    margin-left: 6%;
+    height: 2rem;
+    border: 2px solid rgb(226, 227, 236);
+    background-color: rgb(248, 248, 248);
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+#send-button {
+    text-decoration: none;
+    width: 10vw;
+    height: 8vh;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.container {
+  
+    background-color: rgb(109, 108, 122);
+    width: 100vw;
+    height: 100vh;
+   margin: auto;
+}
+.container h2 {
+    margin-top: 20%;
+    font-size: 1.5rem;
+}
+.container-form {
+    position: scroll;
+}
+.form-content {
+    display: flex;
+}
+
+.container h4 {
+    font-size: 1.5rem;
+}
+
+label {
+    color: rgb(14, 13, 13);
+    font-size: 1.5rem;
+    font-weight: 600;
+}

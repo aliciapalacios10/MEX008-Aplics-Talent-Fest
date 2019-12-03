@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ImgDone from '../../img/clip-done.png';
+import * as ROUTES from '../../constants/routes';
 import './new.css';
 
 const New = () => {
@@ -8,10 +10,10 @@ const New = () => {
         <h1 id="home-title">Recursos humanos</h1>
       <div className="section-home">
         <div className="home-buttons-container">
-            <button className="home-buttons">Solicitud de posición</button>
-            <button className="home-buttons">Cartera de posiciones</button>
-            <button className="home-buttons">Requisiciones</button>
-            <button className="home-buttons">Cartera de postulantes</button>
+            <Link className="home-buttons" to={ROUTES.HOME}>Solicitud de posición</Link>
+            <Link className="home-buttons"to={ROUTES.SIGN_IN}>Vacantes</Link>
+            <Link className="home-buttons"to={ROUTES.REQUISICION_FORM}>Historial de requisiciones</Link>
+            <Link className="home-buttons"to={ROUTES.SIGN_IN}>Postulantes</Link>
         </div>
         <img className="img-done" src={ImgDone} />
       </div>

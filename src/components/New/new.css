@@ -2,16 +2,21 @@
     background-color: #3C3FA0;
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    top:0;
 }
 
 #home-title {
     display: flex;
+    margin: 0;
     padding: 2.5%;
     font-size: 2.7rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: white;
     letter-spacing: 5px;
+    margin-left: 4rem;
 }
 
 .section-home {
@@ -23,21 +28,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 5rem;
+    margin-left: 6.5rem;
 }
 
 .home-buttons {
-    width: 25vw;
+    width: 20vw;
     height: 10vh;
     background-color: white;
+    text-decoration: none;
     color: #3C3FA0;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
     letter-spacing: 1px;  
+    border: none;
   }
 
   .img-done {
-      width: 67vw;
-      height: 73vh;
+      width: 60vw;
+      height: 78vh;
   }

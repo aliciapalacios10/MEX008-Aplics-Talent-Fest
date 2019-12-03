@@ -31,10 +31,10 @@ body {
 }
 
 .img-welcome {
-  width: 74%;
-  height: 85%;
-  /* width: 50vw;
-  height: 65vh; */
+  /* width: 74%;
+  height: 85%; */
+  width: 65vw;
+  height: 70vh;
 }
 
 .logo {

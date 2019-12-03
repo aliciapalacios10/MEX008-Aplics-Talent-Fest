@@ -4,15 +4,13 @@ import { compose } from 'recompose';
 import { SignUpLink } from '../SignUp';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
+import './SignIn.scss';
 
 
 const SignInPage = () => (
     <div>
-        <h1>
-            SignIn
-        </h1>
         <SignInForm/>
-        <SignUpLink/>
+        
     </div>
 )
 
@@ -53,25 +51,52 @@ class SignInFormBase extends Component {
         const isInvalid = password === '' || email === '';
         return (
           <form onSubmit={this.onSubmit}>
-            <input
+            {/* <input
               name="email"
               value={email}
               onChange={this.onChange}
               type="text"
               placeholder="Email Address"
-            />
-            <input
+            /> */}
+            {/* <input
               name="password"
               value={password}
               onChange={this.onChange}
               type="password"
               placeholder="Password"
             />
-            <button disabled={isInvalid} type="submit">
+            <button id="button1" disabled={isInvalid} type="submit">
               Sign In
             </button>
-            {error && <p>{error.message}</p>}
-          </form>
+            {error && <p>{error.message}</p>} */}
+            <div className="container"onClick>
+            <div className="top">
+              <div className="bottom">
+                <div className="center">
+                  <h2>Por favor, inicia sesión</h2> &nbsp;
+                  <input
+              name="email"
+              value={email}
+              onChange={this.onChange}
+              type="text"
+              placeholder="Ingresa tu correo electrónico"
+            />
+                  <input
+                  name="password"
+              value={password}
+              onChange={this.onChange}
+              type="password"
+              placeholder="Ingresa tu contraseña"/>
+              <p id="get-password">¿Olvidaste tu contraseña?</p> &nbsp;
+              <button id="sign-in-button">¡Comencemos!</button> &nbsp;
+              {error && <p id="error-txt"> Upss, necesitamos registrarte primero</p>}
+               <SignUpLink/>
+                </div>
+              </div>
+            </div>
+            </div>
+            </form>
+            
         );
       }
 }

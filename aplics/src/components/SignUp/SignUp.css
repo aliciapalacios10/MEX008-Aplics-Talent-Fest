@@ -1,0 +1,10 @@
+#sign-up {
+    font-size: 0.8rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 2%;
+}
+
+#sign-up a {
+    text-decoration: none;
+    color: rgb(158, 45, 161);
+}

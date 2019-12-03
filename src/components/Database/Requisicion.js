@@ -1,6 +1,7 @@
 // import React from 'react';
 import React, { Component } from 'react';
 import {firebaseConf} from '../Firebase/firebase';
+import './Requisicion.css';
 
 class Requisicion extends Component {
 
@@ -73,40 +74,41 @@ class Requisicion extends Component {
     }
     render() {
       return (
-        <div>
+        <div className="container-requisiciones">
+        <div className='container'>
           {this.state.alert && <div className={`alert alert-${this.state.alertData.type}`} role='alert'>
-            <div className='container'>
+            <div>
               {this.state.alertData.message}
             </div>
           </div>}
           <div className='container' style={{ padding: `40px 0px` }}>
-            <div >
-                <h2>FORMULARIO REQUISICIONES</h2> 
-
+            <div className="form-content">
+                <h2>Por favor, contesta las siguientes preguntas</h2> 
+            
                 <form onSubmit={this.sendMessage.bind(this)} ref='contactForm' >
 
                   <h4>Datos relevantes del puesto</h4>
-                  <div>
+                  <div className="form-content">
                     <label htmlFor='name'>Nombre del puesto</label>
-                    <input type='text'  id='name' 
-                      placeholder='Name' ref={name => this.inputName = name} />
+                    <input className="requisition-form"type='text'  id='name' 
+                      placeholder='Nombre' ref={name => this.inputName = name} />
                   </div>
 
                   <div>
                     <label htmlFor='department'>Departamento</label>
-                    <input type='text'  id='department' 
-                      placeholder='Department' ref={department => this.inputDepartment = department} />
+                    <input className="requisition-form" type='text'  id='department' 
+                      placeholder='Área' ref={department => this.inputDepartment = department} />
                   </div>
 
                   <div>
                     <label htmlFor='area'>Jefe de área</label>
-                    <input type='text'  id='area' 
-                      placeholder='Nombre' ref={area => this.inputArea = area} />
+                    <input className="requisition-form" type='text'  id='area' 
+                      placeholder='Encargado del área' ref={area => this.inputArea = area} />
                   </div>
 
                   <div >
                     <label htmlFor='contract'>Tipo de contrato</label>
-                    <select  id='contract' ref={contract => this.inputContract = contract}>
+                    <select className="requisition-form"  id='contract' ref={contract => this.inputContract = contract}>
                       <option value='Definido'>Definido</option>
                       <option value='Indefinico'>Indefinido</option>
                     </select>
@@ -114,34 +116,34 @@ class Requisicion extends Component {
 
                   <div>
                     <label htmlFor='number'>Número de vacantes</label>
-                    <input type='number'  id='number' 
-                      placeholder='No.' ref={number => this.inputNumber = number}/>
+                    <input className="requisition-form" type='number'  id='number' 
+                      placeholder='Número de vacantes' ref={number => this.inputNumber = number}/>
                   </div>
 
                   <div >
                     <label htmlFor='job'>Tipo de puesto</label>
-                    <select  id='job' ref={job => this.inputJob = job}>
+                    <select className="requisition-form"  id='job' ref={job => this.inputJob = job}>
                       <option value='Nuevo'>Nuevo</option>
                       <option value='Remplazo'>Remplazo</option>
                     </select>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <label htmlFor='replacement'>Remplaza a:</label>
-                    <input type='text'  id='replacement' 
+                    <input className="requisition-form" type='text'  id='replacement' 
                       placeholder='Nombre' ref={replacement => this.inputReplacement = replacement} />
-                  </div>
+                  </div> */}
 
                   <h4>Requisitos que debe cubrir</h4>
                   <div>
                     <label htmlFor='scholarship'>Escolaridad</label>
-                    <input type='text'  id='scholarship' 
+                    <input className="requisition-form" type='text'  id='scholarship' 
                       placeholder='Escolaridad' ref={scholarship => this.inputScholarship = scholarship} />
                   </div>
 
                   <div >
                     <label htmlFor='language'>Idioma</label>
-                    <select  id='language' ref={language => this.inputLanguage = language}>
+                    <select className="requisition-form"  id='language' ref={language => this.inputLanguage = language}>
                       <option value='Español'>Español</option>
                       <option value='Ingles'>Inglés</option>
                       <option value='Otro'>Otro</option>
@@ -150,7 +152,7 @@ class Requisicion extends Component {
 
                   <div >
                     <label htmlFor='travel'>Disponivilidad para viajar</label>
-                    <select  id='travel' ref={travel => this.inputTravel = travel}>
+                    <select className="requisition-form"  id='travel' ref={travel => this.inputTravel = travel}>
                       <option value='Si'>Si</option>
                       <option value='No'>No</option>
                     </select>
@@ -158,28 +160,28 @@ class Requisicion extends Component {
 
                   <div>
                     <label htmlFor='experience'>Experiencia</label>
-                    <input type='text'  id='experience' 
+                    <input className="requisition-form" type='text'  id='experience' 
                       placeholder='Experiencia' ref={experience => this.inputExperience = experience} />
                   </div>
 
-                  <h4>Condiciones de trabajo</h4>
+                  {/* <h4>Condiciones de trabajo</h4>
                   <div>
                     <label htmlFor='place'>Lugar de trabajo</label>
-                    <input type='text'  id=' place' 
+                    <input className="requisition-form" type='text'  id=' place' 
                       placeholder='Lugar' ref={ place => this.inputPlace =  place} />
                   </div>
 
                   <div>
                     <label htmlFor='workingHours'>Horario</label>
-                    <input type='text'  id='workingHours' 
+                    <input className="requisition-form" type='text'  id='workingHours' 
                       placeholder='Hora' ref={ workingHours => this.inputWorkingHours =  workingHours} />
                   </div>
 
                   <div>
                     <label htmlFor='salary'>Sueldo</label>
-                    <input type='text'  id='salary' 
+                    <input className="requisition-form" type='text'  id='salary' 
                       placeholder='Cantidad' ref={salary => this.inputSalary = salary} />
-                  </div>
+                  </div> */}
 
                   {/* <h4>Aprobación</h4>
                   <div >
@@ -197,11 +199,13 @@ class Requisicion extends Component {
                     </textarea>
                   </div>  */}
 
-                  <button type='submit' className='btn btn-primary'>Send</button>
+                  <button type='submit' id="send-button">Send</button>
                 </form>
             </div>
           </div>
         </div>
+      </div>        
+
       );
     }
   }
